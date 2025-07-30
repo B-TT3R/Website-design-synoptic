@@ -25,9 +25,31 @@
   box-sizing: border-box;
 }
 
-section {
-  display: -webkit-flex;
+.course-item {
   display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.course-item img {
+  width: 120px; /* or adjust as needed */
+  height: auto;
+  border-radius: 5px;
+}
+
+.course-item p {
+  margin: 0;
+  font-size: 1em;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul {
@@ -66,26 +88,34 @@ footer {
 </header>
 
 <section>
-  <nav>
-    <ul>
-      <li><img src="performing arts.jpg" alt=""></li>
-      <li><img src="hairdressing.jpg" alt=""></li>
-      <li><img src="course.png" alt=""></li>
-    </ul>
-  </nav>
+  <div class="course-item">
+    <img src="performing arts.jpg" alt="Performing Arts">
+    <p>Diploma in Performing Arts</p>
+  </div>
+
+  <div class="course-item">
+    <img src="hairdressing.jpg" alt="Hairdressing">
+    <p>advanced diploma in hairdressing</p>
+  </div>
+
+  <div class="course-item">
+    <img src="course.png" alt="Generic Course">
+    <p>Advanced diploma in welding</p>
+  </div>
+
+    <div class="course-item">
+      <img src="images.png" alt="">
+    <p> ETC...</p>
+  </div>
   
-  <article>
-    <h1></h1>
-    <p></p>
-    <p></p>
-  </article>
 </section>
+
 
 <footer>
 </html>
   <div>
   <p class="copyright">
-    &copy;MCAST
+    &copy;MCAST. All rights reserved.
   </p>
 </div>
 
