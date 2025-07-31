@@ -25,6 +25,7 @@ body, html {
   max-width: 400px;
   padding: 50px;
   background-color: white;
+  border-radius: 10px;
 }
 
 
