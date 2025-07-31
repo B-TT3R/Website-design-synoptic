@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+
+    </head>
+<body>
+<div class="container">
+    <!-- Header -->
+    <header class="header">
+    <h1><img src="Images/Primary-Blue-1-scaled.jpg" alt="MCAST Logo" class="logo-img"></h1>
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="Student_Info_Page.html">Student Info Page</a>
+<a href="Courses.html">Courses</a>
+<a href="News.html">News</a>
+<a href="Contact.html">Contact</a>
+<input type="text" placeholder="Search..." class="search-box">
+</nav>
+    </header>
+
+<div class="bg-img">
+<form action="Images/background.jpg" class="BACKGROUNDCONTAINER">
+<h1>Contact Us</h1>
+    <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="35" required></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+</div>
+
+<script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            
+            const mailtoLink = `mailto:Tyra.Cassar.H63297@mcast.edu.com?subject=Contact%20Form%20Message&body=Name%3A%20${encodeURIComponent(name)}%0AEmail%3A%20${encodeURIComponent(email)}%0AMessage%3A%20${encodeURIComponent(message)}`;
+
+            
+            window.location.href = mailtoLink;
+        });
+    </script>
+        <div class="footer">
+        <p class="copyright">
+        &copy;MCAST. All rights reserved.
+        </p>
+        <p>
+            MCAST Main Campus Triq Kordin, Paola, Malta PLA9032
+        </p>
+
+    </main>
+
+</div>
+
+
+
+
